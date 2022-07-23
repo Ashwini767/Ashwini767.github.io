@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>About us Page</title>
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="contact"><img src=""></div>
+            <li><a href="about ">Home</a></li>
+            <li><a href="skills">Food</a></li>
+            <li><a href="projects">AboutUs</a></li>
+            <li><a href="education">Contact Us</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">About US</p>
+                  
+                <p class="text-small">
+                    Here you will get to know the team
+                    members of our company
+                </p>
+                <br>
+                <p class="center"><a href="#Order" 
+                   style="text-decoration:none;color:white;">
+                        Below are the people who
+                        works in our company</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="service">
+        <h1 class="h-primary center" style="margin-top:30px;text-align:center;">
+            Our Team
+        </h1>
+    <div id="services">
+            <div class="box">
+                <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20201231132740/Capture.PNG"
+                    alt="picture goes here">
+              
+                <p class="center">
+                    <a href="#xyz" style="text-decoration:none;color:black;
+        font-weight:bold;font-family: 'Langar', cursive;">
+                        xyz
+                    </a>
+                </p>
+                <p style="font-family: sans-serif">CEO and the Founder</p>
+            </div>
+            <div class="box">
+                <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20201231132740/Capture.PNG"
+                    alt="picture goes here">
+                  
+                <p class="center">
+                    <a href="#abc" style="text-decoration:none;color:black;
+        font-weight:bold;font-family: 'Langar', cursive;">
+                        abc
+                    </a>
+                </p>
+                  
+                <p style="font-family: sans-serif ">co-founder</p>
+                <p style="font-family: sans-serif ">Foodscalablility@gmail.com</p>
+            </div>
+            <div class="box">
+                <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20201231132740/Capture.PNG"
+                    alt="picture goes here">
+                <br>
+                <p class="center">
+                    <a href="#xyz" style="text-decoration:none;color:black;
+           font-weight:bold;font-family: 'Langar', cursive;">
+                        asw
+                    </a>
+                </p>
+                <p style="font-family: sans-serif ">Food Manager of the company </p>
+  
+            </div>
+        </div>
+      
+    </section>
+  
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+  
+    </footer>
+</body>
+  
+</html>
+CSS Design: We will use CSS to design the simple interface page. Here the interesting part for creating this page is using the same background for the navbar and the background of the web page. In the footer also, we will use the same background by using the class that we have used for giving background images to the webpage and navbar. Another interesting of the webpage is that the navbar is fixed at one point, so when the user will scroll the webpage they will find the navbar to be fixed in one place.
+
+
+* {
+            margin:0;
+            padding:0;
+            overflow-x: hidden;
+        }
+  
+        html {
+            scroll-behaviour: smooth;
+        }
+  
+        :root {
+            --navbar-height: 59px;
+        }
+        .logo {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+  
+        .logo img {
+            width: 33%;
+            border: 2px solid white;
+            border-radius: 50px;
+        }
+  
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+  
+        .nav-list {
+            width: 70%;
+            display: flex; 
+        }
+  
+        .nav-list li {
+  
+            list-style: none;
+            padding: 2px 6px;
+        }
+  
+        .nav-list li a {
+  
+            text-decoration: none;
+            color: white;
+        }
+  
+        .nav-list li a:hover {
+            color: grey;
+        }
+  
+        .rightNav {
+            width: 50;
+            text-align: right;
+        }
+  
+        #search {
+            padding: 5px;
+            font-size: 17px;
+            border: 2px solid grey;
+            border-radius: 9px;
+        }
+  
+        .background {
+            background: grey;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+  
+        .firstsection {
+            height: 100vh;
+        }
+  
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            max-width: 50%;
+            margin: auto;
+            height: 80%;
+        }
+  
+        .firstHalf {
+            width: 75%;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center
+        }
+  
+        .firstHalf img {
+            display: flex;
+            border-radius: 9050px;
+        }
+  
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 41px;
+            text-align: center;
+        }
+  
+        .text-small {
+            font-family: 'Sansita Swashed', cursive;
+            font-size: 18px;
+            text-align: center;
+        }
+  
+        #service {
+            margin: 34px;
+            display: flex;
+        }
+  
+        #service .box {
+            padding: 100px;
+            margin: 3px 6px;
+            border-radius: 28px;
+        }
+  
+        #service .box img {
+            margin-top: 10px;
+            height: 150px;
+            margin: auto;
+            display: block;
+            border-radius: 200px;
+        }
+  
+        #service .box p {
+  
+            font-family: sans-serif;
+            text-align: center;
+        }
+  
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+  
+        #services .box {
+  
+            padding: 100px;
+            margin: 3px 6px;
+            border-radius: 28px;
+        }
+  
+        #services .box img {
+            margin-top: 10px;
+            height: 150px;
+            margin: auto;
+            display: block;
+            border-radius: 100px;
+        }
+  
+        #services .box p {
+  
+            font-family: sans-serif;
+            text-align: center;
+        }
+  
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+  
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+  
+        .center {
+            text-align: center;
+        }
+  
+        .text-footer {
+            text-align: center;
+            padding: 10px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        @media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+After combining the above two sections of code, it creates the About us page.
+
+Output:
+
+
+
+
+
+
+
+
+
+
+Like
+3
+Next
+How to disable zoom on a mobile web page using CSS?
+RECOMMENDED ARTICLES
+Page :
+1
+2
+3
+How to design Meet the Team Page using HTML and CSS ?
+31, Dec 19
+Design a web page using HTML and CSS
+20, Dec 20
+Design a Contact us Page using HTML and CSS
+11, Jan 21
+Design a Tribute Page using HTML & CSS
+08, Apr 21
+How to redirect a page to another page in HTML ?
+11, Oct 19
+How to display search result of another page on same page using ajax in JSP?
+29, Aug 19
+How to design a responsive Web Page in HTML ?
+25, Jan 22
+How to show Page Loading div until the page has finished loading?
+27, Sep 19
+How to pass form variables from one page to other page in PHP ?
+22, Nov 19
+How to design page view navigation for mobiles using app-UI plugin?
+25, Oct 20
+How to design calendar for web page using jQuery EasyUI ?
+20, Dec 20
+HTML | Responsive full page image using CSS
+27, Nov 17
+How to create multicolored text in a web page using HTML & CSS ?
+18, Aug 21
+Design a Happy Halloween Porter using HTML and CSS
+31, Jan 22
+Design Background color changer using HTML CSS and JavaScript
+12, Jan 21
+How to Design Stitched Glowing Effect for Button using HTML and CSS ?
+14, May 20
+How to Design Homepage like Facebook using HTML and CSS ?
+06, Oct 20
+Design a webpage for online food delivery system using HTML and CSS
+14, Dec 20
+Design a running car animation using HTML and CSS
+28, Dec 20
+How to design a modern sidebar menu using HTML and CSS?
+05, Mar 21
+Design a calendar using HTML and CSS
+27, Jan 21
+Design a Rotating card effect using HTML and CSS
+04, Mar 21
+Design Hit the Mouse Game using HTML, CSS and Vanilla Javascript
+09, Mar 21
+Design a Frosted Glass Effect using HTML and CSS
+11, Feb 21
+Article Contributed By :
+https://media.geeksforgeeks.org/auth/avatar.png
+codingbeast12
+@codingbeast12
+Vote for difficulty
+Current difficulty : Easy
+Easy
+Normal
+Medium
+Hard
+Expert
+Article Tags :
+CSS-Misc
+HTML-Misc
+CSS
+HTML
+Web Technologies
+Web technologies Questions
+Practice Tags :
+HTML
+Improve Article
